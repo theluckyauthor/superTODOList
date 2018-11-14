@@ -1,0 +1,22 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "app todo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theluckyauthor/superTODOList.git"
+  },
+  "author": "jdj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theluckyauthor/superTODOList/issues"
+  },
+  "homepage": "https://github.com/theluckyauthor/superTODOList#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
