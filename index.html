@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue CDN</title>
+</head>
+<body>
+
+    <div id="app">
+        <p>{{ message }}</p>
+        <input v-model="message">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!'
+            }
+        })
+    </script>
+    <div id="app2">
+        <button v-on:click="guardar">Guardar</button>
+    </div>
+
+    <script>
+        var app2 = new Vue({
+            el: '#app2',
+            methods: {
+                Guardar: function () {
+                    this.message = this.message
+                }
+            }
+        })
+
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBNbP7eXBetKLlwNifW_ASl6dFa1hkXA8M",
+    authDomain: "todolist-c52f0.firebaseapp.com",
+    databaseURL: "https://todolist-c52f0.firebaseio.com",
+    projectId: "todolist-c52f0",
+    storageBucket: "todolist-c52f0.appspot.com",
+    messagingSenderId: "115571651232"
+  };
+  firebase.initializeApp(config);
+    </script>
+
+</body>
+</html>
